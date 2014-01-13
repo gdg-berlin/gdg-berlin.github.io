@@ -1,0 +1,26 @@
+<div class="span12">
+    <p>&nbsp;</p>
+    <div class="gdg_loading" ng-show="loading"></div>
+    <div class="row">
+        <img ng-show="cover.url" class="span12" ng-src="{{cover.url}}">
+        <div class="span12 hidden-phone" id="cover" ng-show="cover.url">
+            <div id="cover-content">
+                <h1 class="span12">{{cover.title}}</h1>
+                <p class="span12">{{cover.subtitle}}</p>
+                <p class="span12">
+                    <a class="btn btn-primary btn-large" ng-href="{{cover.button.url}}">{{cover.button.text}}</a>
+                </p>
+            </div>
+        </div>
+        <hr>
+    </div>
+    <div class="row">
+        <div class="span1"></div>
+        <div class="span8">
+            <p ng-bind-html-unsafe="desc"></p>
+        </div>
+        <div class="span3" style="float: right;">
+            <iframe width="225" height="570" src="http://meetu.ps/284DxM" frameborder="0"></iframe>
+        </div>
+    </div>
+</div>
