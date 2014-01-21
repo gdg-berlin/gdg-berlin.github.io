@@ -36,7 +36,8 @@
         <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
         <script src="lib/angular.ui.min.js"></script>
         <script src="js/boomerang.js"></script>
-	</head>
+        <a href="https://plus.google.com/+Gdg-berlin" rel="publisher"/>
+    </head>
         <body ng-controller="MainControl">
             <!-- NAV -->
             <div class="navbar navbar-static-top navbar-inverse">
@@ -54,7 +55,7 @@
                                 <li ng-class="{ 'active' : activeTab=='news' }"><a href="#news">News</a></li>
                                 <li ng-class="{ 'active' : activeTab=='events' }"><a href="#events">Events</a></li>
                                 <li ng-class="{ 'active' : activeTab=='photos' }"><a href="#photos">Photos</a></li>
-                                <li><a href="https://plus.google.com/+Gdg-berlin" rel="publisher">Google+</a></li>
+                                <li><a href="https://plus.google.com/+GDG-Berlin" rel="publisher">Google+</a></li>
                             </ul>
                         </div>
                     </div>
@@ -62,6 +63,13 @@
             </div>
             <div class="container">
                 <div class="row" ng-view></div>
+                <div class="footer">
+                    <hr/>
+                    <p style="text-align: center;">
+                        Follow us on <a href="https://plus.google.com/+GDG-Berlin" rel="publisher">Google+</a>
+                    </p>
+                </div>
             </div>
+
         </body>
     </html>    
